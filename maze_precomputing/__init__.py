@@ -1,0 +1,1 @@
+from maze_precomputing.BatchMazeProxy import BatchMazeProxy

@@ -1,0 +1,97 @@
+C:\Users\maart\Anaconda3\python.exe "C:/Users/maart/OneDrive/Thesis/Thesis pycharm project/main_functions/main_analyser.py"
+If you want to use non-default classes, then please just enter them in any order, separated by spaces.
+For example: "IndicatorMaze ACMem", otherwise, input an empty string.
+Currently, the default classes are: LandmarkMaze, ACRecLin, A2CRecAgent
+LandmarkRail ACMem
+If you want to use non-default config options, then please just enter them in any order, separated by spaces.
+For example: "maze_size=20 decimation=0.3", otherwise, input an empty string.
+Currently, the default values are:
+maze_class: <class 'maze_building.LandmarkRail.LandmarkRail'>
+batch_size: 32
+training_set_size: 10000
+validation_set_size: 2000
+maze_size: 7
+decimation: 0.1
+view_length_ind_maze: 7
+view_length_lm_maze: 3
+drive: True
+living_reward: -0.1
+sloth_reward: -0.1
+positive_reward: 2
+negative_reward: -1
+exit_reward: 1
+kill_early_training: 99
+kill_early_eval: 499
+max_nb_landmarks: 16
+curriculum_learning: False
+cpu_or_cuda: cpu
+model_class: <class 'models.ACMem.ACMem'>
+agent_class: <class 'agents.A2CRecAgent.A2CRecAgent'>
+learning_rate: 0.001
+discount_factor: 0.95
+entropy_scaler: 0.1
+grad_clip_val: 0.1
+comment:
+nb_training_epochs: 500
+total_nb_mazes_per_epoch: 2500
+total_nb_validation_mazes_per_epoch: 200
+max_nb_landmarks=8
+Config loaded! The folder name is: C:\Users\maart\OneDrive\Thesis\Thesis pycharm project\main_functions/../results/LandmarkRail/ACMem/_lr=0.001_gamma=0.95_nblm=8_
+Loaded 10000 training mazes and 2000 validation mazes succesfully.
+Resuming from a saved agent with starting epoch 500
+
+
+
+
+
+############################################################################
+## New post-analysis round starting, we render maze 0:
+@ ACF  HD     E   G B      0 1 1       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |       Find goal H
+000000000000000000000
+############################################################################
+ @ACF  HD     E   G B      1 1 1       0 0 1       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  @CF  HD     E   G B      1 1 1       0 1 0       0 0 0       0 0 1       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  A@F  HD     E   G B      1 1 1       1 0 0       0 0 0       0 1 0       0 0 0       0 0 0       0 0 1       0 0 0       0 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  AC@  HD     E   G B      1 1 1       0 0 0       0 0 0       1 0 0       0 0 0       0 0 0       0 1 0       0 0 0       0 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  ACF@ HD     E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       1 0 0       0 0 0       0 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  ACF @HD     E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 1       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  ACF  @D     E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 0 1       0 0 0       0 0 0       0 0 0       0 1 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  ACF  H@     E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 1 0       0 0 0       0 0 0       0 0 0       1 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+  ACF  HD@    E   G B      1 1 1       0 0 0       0 0 0       0 0 0       1 0 0       0 0 0       0 0 0       0 0 0       0 0 0       1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |       Find goal H
+000000000000000000000
+############################################################################
+Phase 1 is over, moving to phase 2!
+  ACF  HD @   E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 |       Find goal H
+000000630000000000000
+############################################################################
+  ACF  HD@    E   G B      1 1 1       0 0 0       0 0 0       0 0 0       1 0 0       0 0 0       0 0 0       0 0 0       0 0 0       0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |       Find goal H
+000000630000000000000
+############################################################################
+  ACF  H@     E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 1 0       0 0 0       0 0 0       0 0 0       1 0 0       0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |       Find goal H
+000000720000000000000
+############################################################################
+  ACF  @D     E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 0 1       0 0 0       0 0 0       0 0 0       0 1 0       0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |       Find goal H
+000000010100000000000
+############################################################################
+  ACF  @D     E   G B      1 1 1       0 0 0       0 0 0       0 0 0       0 0 1       0 0 0       0 0 0       0 0 0       0 1 0       0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |       Find goal H
+Terminated! Got reward of 2.0
+Maze 0| Su: 1.0
+
+
+Process finished with exit code 0
